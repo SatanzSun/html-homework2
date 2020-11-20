@@ -1,45 +1,20 @@
-body {
-    background: green;
-}
+
 td{
     border: 1px solid black;
-    width: 40px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
+    position: relative;
 }
 
-.red {
-    width: 0;
-    height: 100%;
-    background: red;
-}
-.orange {
+td:hover .bg1 {
     width: 100%;
-    height: 0;
-    background: orange;
-}
-.blue {
-    width: 0;
     height: 100%;
-    background: blue;
-}
-.brown {
-    width: 0;
-    height: 100%;
-    background: brown;
-}
-.gold {
-    width: 100%;
-    height: 0;
-    background: gold;
-}
-.purple {
-    width: 0;
-    height: 100%;
-    background: purple;
-}
-.toRight:hover div {
-    width: 100%;
     animation: leftToRight 3s;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-clip: padding-box;
 }
 @keyframes leftToRight{
     0% {
@@ -49,15 +24,15 @@ td{
         width: 100%;
     }
 }
-.toLeft {
-    position: relative;
-}
-.toLeft:hover div {
+td:hover .bg4 {
     width: 100%;
+    height: 100%;
     animation: rightToLeft 3s;
+    background: purple;
     position: absolute;
     right: 0;
     top: 0;
+    background-clip: padding-box;
 }
 @keyframes rightToLeft{
     0% {
@@ -67,15 +42,15 @@ td{
         width: 100%;
     }
 }
-.toBottom {
-    position: relative;
-}
-.toBottom:hover div {
+td:hover .bg2 {
     width: 100%;
+    height: 100%;
     animation: topToBottom 3s;
+    background: orange;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
+    background-clip: padding-box;
 }
 @keyframes topToBottom{
     0% {
@@ -85,14 +60,15 @@ td{
         height: 100%;
     }
 }
-.toTop {
-    position: relative;
-}
-.toTop:hover div {
+td:hover .bg3 {
     width: 100%;
+    height: 100%;
     animation: bottomToTop 3s;
+    background: blue;
     position: absolute;
     bottom: 0;
+    right: 0;
+    background-clip: padding-box;
 }
 @keyframes bottomToTop{
     0% {
@@ -102,13 +78,15 @@ td{
         height: 100%;
     }
 }
-.toRightHalf{
-    position: relative;
-}
-.toRightHalf:hover div {
-    width: 50%;
+td:hover .bg61 {
+    Width: 50%;
+    height: 100%;
+    background: brown;
     animation: leftToRightHalf 3s;
     position: absolute;
+    left: 0;
+    top: 0;
+    background-clip: padding-box;
     
 }
 @keyframes leftToRightHalf{
@@ -116,24 +94,61 @@ td{
         width: 0;
     }
     100%{
-        width: 100%;
+        width: 50%;
     }
 }
-.toLeftHalf {
-    position: relative;
-}
-.toLeftHalf:hover div {
-    width: 100%;
+td:hover .bg62 {
+    width: 50%;
+    height: 100%;
+    background: brown;
     animation: rightToLeftHalf 3s;
     position: absolute;
     right: 0;
     top: 0;
+    background-clip: padding-box;
 }
 @keyframes rightToLeftHalf{
     0% {
         width: 0;
     }
     100%{
-        width: 100%;
+        width: 50%;
+    }
+}
+td:hover .bg51 {
+    Width: 50;
+    height: 100%;
+    background: gold;
+    animation: leftToRightHalf 3s;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    background-clip: padding-box;
+    
+}
+@keyframes leftToRightHalf{
+    0% {
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+td:hover .bg52 {
+    width: 50;
+    height: 100%;
+    background: gold;
+    animation: rightToLeftHalf 3s;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-clip: padding-box;
+}
+@keyframes rightToLeftHalf{
+    0% {
+        width: 0;
+    }
+    100%{
+        width: 50%;
     }
 }
